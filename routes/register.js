@@ -22,5 +22,17 @@ router.get('/register',function(req,res,next){
 
 
 });
+router.post('/po',function(req,res,next){
+    var username=req.param("username");
+    var password=req.param("password");
+    var username1=req.body.username;
+    var password1=req.body.password;
+    console.log(username1);
+    console.log(password1);
+    console.log(username);
+    console.log(password);
+    console.log("------------------")
+    res.render("success");
+})
 
 module.exports=router;
